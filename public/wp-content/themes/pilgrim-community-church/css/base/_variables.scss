@@ -1,0 +1,47 @@
+// FONT
+$font-family-korean : 'Noto Serif KR', sans-serif;
+$font-family-serif: serif;
+
+// Body
+$body-bg: #f5f8fa;
+
+// Typography
+
+
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+/*//MEDIA QUERY*/
+$bp-largest: 75rem; // 1200px;
+$bp-large: 62rem; //992px;
+$bp-medium: 48rem; // 786px;
+$bp-small: 36rem; // 576px;
+// 576 768 992 1200
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+// FONT
+$default-font-size: 1.6rem;
+
+// COLORS
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+$color-grey-light-3: #f0f0f0;
+
+$color-grey-dark: #989898;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000;
+
+$pilgrim-color-dark: #343417;
+$pilgrim-color-light: #C9DBCB;
+$pilgrim-color-orange: #E26A39;
+$pilgrim-color-yellow: #FEE80F;
+
+$color-white-transparent: rgba(255, 255, 255, .6);

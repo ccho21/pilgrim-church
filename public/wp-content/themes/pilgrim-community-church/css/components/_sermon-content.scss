@@ -1,0 +1,61 @@
+.section__sermon {
+  border-bottom: .1rem solid $pilgrim-color-light;
+  &-thumb {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &__play {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      & img {
+        height: 25rem;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        transition: all .2s ease-in-out;
+        opacity: 0;
+      }
+      &-icon {
+        border: 1rem solid transparent;
+        border-left: 2rem solid #fff;
+        border-width: 2rem 3rem 2rem 3rem;
+        position: absolute;
+        top: 50%;
+        left: 82%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+      }
+      &-box {
+        position: absolute;
+        width: 6rem;
+        height: 6rem;
+        top: 50%;
+        left: 50%;
+        background: rgba(255, 255, 255, 0.6);
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 100;
+        transition: all .2s ease-in-out;
+
+
+        &:hover {
+          background: rgba(255, 255, 255, 0);
+        }
+      }
+      &:hover {
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

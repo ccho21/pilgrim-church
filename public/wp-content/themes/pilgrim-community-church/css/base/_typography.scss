@@ -1,0 +1,388 @@
+.font {
+    color: $color-white;
+    display: block;
+    backface-visibility: hidden;
+
+    &__top-nav {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+
+        @media only screen and (min-width: 576px) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (min-width: 768px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__top-dropdown {
+        font-weight: 500;
+        font-size: 1.6rem;
+
+        @media only screen and (min-width: 576px) {
+            font-size: 1.6rem;
+        }
+
+        @media only screen and (min-width: 768px) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__main {
+        font-size: 4.5rem;
+        font-weight: 700;
+        letter-spacing: 1.5rem;
+        text-transform: uppercase;
+
+        @media only screen and (min-width: 576px) {
+            font-size: 7rem;
+            font-weight: 700;
+            letter-spacing: 2.5rem;
+            text-transform: uppercase;
+        }
+
+        @media only screen and (min-width: 768px) {
+            font-size: 8rem;
+            letter-spacing: 2.5rem;
+        }
+    }
+
+    &__sub {
+        font-size: 2rem;
+        letter-spacing: 1rem;
+        font-weight: 700;
+
+        @media only screen and (min-width: 576px) {
+            font-size: 3rem;
+        }
+
+        @media only screen and (min-width: 768px) {
+            font-size: 4rem;
+        }
+    }
+
+    &__heading-main {
+        font-size: 12vw;
+    }
+
+    &__heading-sub {
+        font-size: 2rem;
+        font-family: $font-family-serif;
+        font-style: italic;
+    }
+
+    &__section-main {
+        font-size: 12vw;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+    }
+
+    &__section-sub {
+        font-size: 1.6rem;
+        font-family: $font-family-serif;
+        font-style: italic;
+    }
+
+    &__section-title {
+        color: $pilgrim-color-dark;
+        font-size: 3rem;
+        letter-spacing: .7rem;
+    }
+
+    &__section-sub__title {
+        font-size: 2rem;
+        color: $pilgrim-color-dark;
+    }
+
+    &__section-content {
+        color: $pilgrim-color-dark;
+        font-size: 1.6rem;
+    }
+
+    &__section-sub__title {
+        font-size: 3rem;
+        color: $pilgrim-color-dark;
+    }
+
+    &__section-link {
+        color: $pilgrim-color-dark;
+        text-align: center;
+
+        &__title {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        &__sub {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__post {
+        color: $pilgrim-color-dark;
+
+        &-title {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        &-date {
+            color: $color-grey-dark;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        &-content {
+            font-size: 1.6rem;
+        }
+
+        &-link {
+            font-size: 1.8rem;
+            color: $color-grey-dark;
+            transition: all .2s;
+
+            &:hover {
+                color: $pilgrim-color-light;
+                transform: translateX(1rem);
+            }
+        }
+    }
+
+    &__footer {
+        &-title {
+            font-size: 3rem;
+            font-family: $font-family-serif;
+            letter-spacing: .5rem;
+            font-style: italic;
+        }
+    }
+
+    //DESKTOP VERSION
+    @media only screen and (min-width: 768px) {
+        &__main {
+            font-size: 10rem;
+            font-weight: 700;
+            letter-spacing: 3.5rem;
+        }
+
+        &__sub {
+            font-size: 4rem;
+            letter-spacing: 1.5rem;
+        }
+
+        &__heading-main {
+            font-size: 8rem;
+        }
+
+        &__heading-sub {
+            font-size: 3rem;
+        }
+
+        &__section-main {
+            font-size: 8rem;
+            letter-spacing: 2rem;
+        }
+
+        &__section-sub {
+            font-size: 2rem;
+        }
+
+        &__section-title {
+            font-size: 4rem;
+            letter-spacing: 1rem;
+        }
+
+        &__section-sub__title {
+            font-size: 3rem;
+            color: $pilgrim-color-dark;
+        }
+
+        &__section-content {
+            color: $pilgrim-color-dark;
+            font-size: 2rem;
+            padding: 0;
+        }
+
+        &__section-link {
+            color: $pilgrim-color-dark;
+            text-align: center;
+
+            &__title {
+                font-size: 2.5rem;
+                font-weight: 700;
+            }
+
+            &__sub {
+                font-size: 1.8rem;
+            }
+        }
+
+        &__section-event {
+            color: $color-grey-dark-2;
+            text-align: center;
+
+            &__month {
+                font-size: 2.5rem;
+            }
+
+            &__date {
+                font-size: 5rem;
+                line-height: 1;
+            }
+        }
+
+        &__post {
+            color: $pilgrim-color-dark;
+
+            &-title {
+                font-size: 4.2rem;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            &-date {
+                color: $color-grey-dark;
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            &-content {
+                font-size: 1.8rem;
+            }
+
+            &-link {
+                font-size: 1.8rem;
+                color: $color-grey-dark;
+                transition: all .2s;
+
+                &:hover {
+                    color: $pilgrim-color-light;
+                    transform: translateX(1rem);
+                }
+            }
+        }
+
+        &__footer {
+            &-title {
+                font-size: 4rem;
+                font-family: $font-family-serif;
+                letter-spacing: .5rem;
+                font-style: italic;
+                line-height: 1.3;
+            }
+        }
+    }
+
+    // //////////////////
+    // GIVING FONT SIZE
+    &__xl {
+        font-size: 4rem;
+    }
+
+    &__lg {
+        font-size: 3rem;
+    }
+
+    &__md {
+        font-size: 2rem;
+    }
+
+    &__sm {
+        font-size: 1.6rem;
+    }
+
+    &__xs {
+        font-size: 1.2rem;
+    }
+
+    &__pilgrim-dark {
+        color: $pilgrim-color-dark;
+    }
+
+    &__serif {
+        font-family: $font-family-serif;
+    }
+
+    &__anton {
+        font-family: Anton;
+        font-weight: 400;
+    }
+
+    &__korean {
+        font-family: $font-family-korean;
+    }
+
+    &__decoration-none {
+        text-decoration: none !important;
+    }
+
+    &__link-index {
+        z-index: 1000;
+    }
+}
+
+.dash {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 1rem;
+
+    &__num {
+        margin-right: 1rem;
+        font-weight: 700;
+    }
+
+    &__content {
+        margin-right: 1rem;
+    }
+
+    &__long {
+        flex-grow: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: .2rem;
+    }
+
+    &__small {
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 2rem;
+        height: .3rem;
+        margin: 1rem;
+    }
+}
+
+.heading__line {
+    margin-top: 5rem;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+
+    &::before {
+        content: '';
+        background: $pilgrim-color-dark;
+        height: .2rem;
+        position: absolute;
+        width: 20%;
+        left: -40%;
+        top: 50%;
+        z-index: -1;
+        transform: translateY(-50%);
+    }
+
+    &::after {
+        content: '';
+        background: $pilgrim-color-dark;
+        height: .2rem;
+        position: absolute;
+        width: 20%;
+        right: -40%;
+        top: 50%;
+        z-index: -1;
+        transform: translateY(-50%);
+    }
+}

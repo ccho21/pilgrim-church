@@ -1,0 +1,167 @@
+.movingLetter {
+  animation: fadeIn 2s ease-out;
+  /*& span {
+    display: inline-block;
+    animation: movingLetter 2s ease-in-out;
+  }*/
+}
+@keyframes movingLetter {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideDown {
+  animation: slideDown 2s ease-out;
+}
+
+/* Animation One */
+
+@keyframes collapseUp {
+  0% {
+    opacity: 1;
+    transform: translate(0px, 5px);
+
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes collapseDown {
+  50% {
+    opacity: 0;
+    transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 5px);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(2rem);
+  }
+}
+
+//
+
+@keyframes scrollDots {
+  0% {
+    opacity: 0;
+    color: $color-grey-dark-2;
+  }
+  50% {
+    opacity: 1;
+    color: $color-white;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bounceArrow {
+  0% {
+    transform: translateY(0rem);
+  }
+  20% {
+    transform: translateY(-4rem);
+  }
+  40% {
+    transform: translateY(0rem);
+  }
+  60% {
+    transform: translateY(-2rem);
+  }
+  80% {
+
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes rotateUpDown {
+  0% {
+    transform: rotateX(90deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(0deg) rotateY(90deg);
+  }
+  75% {
+    transform: rotateX(00deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(90deg) rotateY(0deg);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: rgb(254, 232, 15);
+  }
+  25% {
+    background-color: rgb(128, 178, 75);
+  }
+  50% {
+    background-color: rgb(238,115,112);
+  }
+  75% {
+    background-color: rgb(19, 188, 33);
+  }
+  100% {
+    background-color: rgb(73, 102, 212);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

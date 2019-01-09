@@ -1,0 +1,43 @@
+/*
+  Theme Name: Fictional University
+  Author: Changsoo
+  Version: 1.0
+ */
+
+ // Bootstrap
+@import '../../../../../node_modules/bootstrap/scss/bootstrap';
+
+// FONT
+
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700");
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,600&subset=korean');
+
+// Base
+@import 'base/variables';
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+
+// Components
+@import 'components/butons';
+@import 'components/video';
+@import 'components/front-pages';
+@import 'components/effects';
+@import 'components/collapse';
+@import 'components/photos';
+@import 'components/page-loader';
+@import 'components/login';
+@import 'components/full-calendar';
+@import 'components/google-map';
+@import 'components/event-content';
+@import 'components/sermon-content';
+
+
+ //layouts
+@import 'layouts/navigation';
+@import 'layouts/contact';
+@import 'layouts/footer';
+@import 'layouts/main';
+ //Contents
+@import 'pages/_contents';

@@ -1,0 +1,56 @@
+.contact__form {
+  position: relative;
+  &-label {
+    color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 50%;
+    left: 1.5%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  &-input {
+    padding: 1rem 0 1rem 6.5rem;
+    transition: border .5s ease-out;
+    &:focus {
+      border: .1rem solid black;
+      //box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.5);
+      box-shadow:none;
+    }
+    @media only screen and (min-width: $bp-small) {
+      padding: 1rem 0 1rem 7rem;
+    }
+    @media only screen and (min-width: $bp-medium) {
+      padding: 1rem 0 1rem 8rem;
+    }
+    @media only screen and (min-width: $bp-large) {
+      padding: 1rem 0 1rem 9rem;
+    }
+    @media only screen and (min-width: $bp-largest) {
+      padding: 1rem 0 1rem 10rem;
+    }
+  }
+  &-text {
+    font-size: 2rem;
+    &:focus {
+      border: .1rem solid black;
+      box-shadow:none;
+    }
+  }
+}
+
+// NAVIGATION
+@media only screen and (min-width: $bp-small) {
+
+}
+
+@media only screen and (min-width: $bp-medium) {
+
+}
+
+@media only screen and (min-width: $bp-large) {
+
+}
+
+@media only screen and (min-width: $bp-largest) {
+
+}

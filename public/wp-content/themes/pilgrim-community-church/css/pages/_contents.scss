@@ -1,0 +1,154 @@
+.section__bg {
+  background:url('../images/background-pattern.jpg');
+  background-color: $color-white;
+  position: relative;
+  height: 100%;
+}
+.section__min-height {
+  min-height: 10rem;
+}
+.section__margin {
+  margin: 7rem auto;
+}
+.section__edit-padding {
+  padding: 15rem 0;
+}
+
+.section-top {
+  &__content {
+    position: relative;
+    height: 75vh;
+    cursor: default;
+    &:after {
+      content : "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,.6);
+    }
+  }
+  &__box {
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      width:90%;
+      margin: 0;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 100;
+    & h2, p {
+      animation: fadeInUp 2s ease;
+    }      
+  }
+  &__detail {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    &-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 1rem 1rem 1rem 2rem;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    &-img {
+      height: 80vh;
+      width: 100%;
+    }
+  }
+  &__img {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    &-who-we-are {
+      //background: url("../images/weArePilgrim2.jpg");
+    }
+    &-sundays {
+      background: url("../images/jesus.jpg");
+    }
+    &-leadership {
+      background: url("../images/leadership.jpg");
+    }
+    &-event {
+      background: url("../images/event1.jpg");
+    }
+    &-gallery {
+      background: url("../images/gallery.jpg");
+    }
+    &-sermon {
+      background: url("../images/sermon.jpg");
+    }
+  }
+}
+
+
+.section__sunday {
+  margin: 5rem auto;
+  &-link {
+    display: block;
+    width: 90%;
+    height: 90%;
+
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    transition: transform .3s;
+    &:hover {
+      .section__sunday-line {
+        width: 20%;
+      }
+      &:first-child {
+        transform: translateY(-1rem);
+      }
+    }
+  }
+  &-line {
+    transition: width .2s ease-in;
+    background-color: $pilgrim-color-dark;
+    height: .2rem;
+    width: 10%;
+    margin: 2rem auto;
+  }
+}
+.section__location {
+  &-icon {
+    padding-right: 1.5rem;
+  }
+  &-content {
+  }
+}
+
+
+
+.event {
+  &__content {
+    &-header {
+    }
+
+    &-footer {
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #fff;
+      & a {
+        color: $pilgrim-color-orange;
+      }
+    }
+  }
+}
+
