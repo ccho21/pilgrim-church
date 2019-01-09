@@ -5,6 +5,11 @@ WordPress: pilgrim-church main website
   #### Technologies: jQuery, JavaScript(ES6), SASS, Bootstrap, Webpack, Gulp, and Babel
   - CRUD operation
   - Rest API
+  - GoogleMap
+  - Image resizing,
+  - Route
+  - Server configuration
+  - Login validation and authorization
   - mobile responsive
  
   
